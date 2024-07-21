@@ -9,6 +9,12 @@ export default {
       fontFamily: {
         Roboto: ["Roboto"],
        },
+       addComponents: {
+        'cat-img':{
+          width: '200px',
+          
+        }
+       }
     },
   },
   plugins: [],

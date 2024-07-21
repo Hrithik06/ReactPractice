@@ -1,5 +1,5 @@
 import React,{ useState } from "react";
-import Navbar from "./Navbar";
+import Navbar from "../components/Navbar";
 
 const Counter = () => {
     const [counter, setCounter] = useState(0);
@@ -29,7 +29,7 @@ const Counter = () => {
     }
   return (
     <>
-      <Navbar />
+      <Navbar text={'Counter'}/>
       <div className="flex items-center flex-col gap-2 p-2">
         <p className="font-semibold text-2xl">{counter?counter:0}</p>
         <div>

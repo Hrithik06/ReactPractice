@@ -1,4 +1,6 @@
+import AccordionContainer from './Accordion/AccordionContainer'
 import Counter from './Counter/Counter'
+import ImageGallery from './Image Gallery/ImageGallery'
 
 function App() {
 
@@ -6,7 +8,9 @@ function App() {
 
   return (
     <div className='font-Roboto'>
-    <Counter/>
+    {/* <Counter/> */}
+    {/* <ImageGallery/> */}
+    <AccordionContainer/>
     </div>
   )
 }
