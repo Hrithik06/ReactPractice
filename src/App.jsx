@@ -2,6 +2,7 @@ import AccordionContainer from './Accordion/AccordionContainer'
 import Counter from './Counter/Counter'
 import GuessTheNumber from './GuessTheNumber/GuessTheNumber'
 import ImageGallery from './Image Gallery/ImageGallery'
+import StarRating from './StarRating/StarRating'
 
 function App() {
 
@@ -12,7 +13,8 @@ function App() {
     {/* <Counter/> */}
     {/* <ImageGallery/> */}
     {/* <AccordionContainer/> */}
-    <GuessTheNumber/>
+    {/* <GuessTheNumber/> */}
+    <StarRating/>
     </div>
   )
 }
