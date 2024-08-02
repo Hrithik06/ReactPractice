@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import Navbar from "../components/Navbar";
 import Accordion from "./Accordion";
 const AccordionContainer = () => {
@@ -29,20 +29,31 @@ const AccordionContainer = () => {
         "Locavore franzen fashion axe live-edge neutra irony synth af tilde shabby chic man braid chillwave waistcoat copper mug messenger bag. Banjo snackwave blog, microdosing thundercats migas vaporware viral lo-fi seitan.",
     },
   ];
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [isChecked, setIsChecked] = useState(false)
+const handleChange=(e)=> {
+  setIsChecked(e.target.checked);
+
+  
+  // do whatever you want with isChecked value
+}
+
   return (
     <>
       <Navbar text={"Accordion"} />
-      <div className="w-[90%]  mx-auto">
-        <h4 className="text-center font-semibold m-6">
+      <div className="w-[90%] mx-auto">
+        <h4 className="text-center font-semibold m-6 flex justify-center gap-2">
           <label htmlFor="accordionMultiple">
             Is multiple open accordion allowed?
           </label>
-          <input type="checkbox" name="" id="accordionMultiple" />
+          <input type="checkbox" id="accordionMultiple" onChange={(e)=>handleChange(e)}/>
         </h4>
         {accordionData.map((accordion, index) => (
           <Accordion
             title={accordion.title}
             content={accordion.content}
+            isActive={isChecked?true:(activeIndex === index)}
+            onShow={() => setActiveIndex(index) }
             key={index}
           />
         ))}

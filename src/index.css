@@ -6,3 +6,15 @@
 .cat-img {
   @apply w-64 m-5 rounded-xl cursor-pointer shadow-2xl shadow-gray-700 ease-in-out duration-200 hover:scale-110;
 }
+
+/* Hide the number input arrows in all browsers */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hide the number input arrows in Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}

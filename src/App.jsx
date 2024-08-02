@@ -1,5 +1,6 @@
 import AccordionContainer from './Accordion/AccordionContainer'
 import Counter from './Counter/Counter'
+import GuessTheNumber from './GuessTheNumber/GuessTheNumber'
 import ImageGallery from './Image Gallery/ImageGallery'
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
     <div className='font-Roboto'>
     {/* <Counter/> */}
     {/* <ImageGallery/> */}
-    <AccordionContainer/>
+    {/* <AccordionContainer/> */}
+    <GuessTheNumber/>
     </div>
   )
 }
