@@ -1,23 +1,10 @@
-import AccordionContainer from './Accordion/AccordionContainer'
-import Counter from './Counter/Counter'
-import GuessTheNumber from './GuessTheNumber/GuessTheNumber'
-import ImageGallery from './Image Gallery/ImageGallery'
-import StarRating from './StarRating/StarRating'
-
+import { Outlet } from "react-router-dom";
 function App() {
-
-
-
   return (
-    <div className='font-Roboto'>
-    {/* <Counter/> */}
-    {/* <ImageGallery/> */}
-    {/* <AccordionContainer/> */}
-    {/* <GuessTheNumber/> */}
-    <StarRating/>
+    <div className="font-Roboto">
+      <Outlet />
     </div>
-  )
+  );
 }
 
-export default App
- 
+export default App;
